@@ -12,6 +12,7 @@ I am not sure...................................................................
 
 <!-- ![img1](https://drive.google.com/file/d/1D05C1CV3LbY377gyr-LfCo9Kv636_kqv/view?usp=drive_link) -->
 ![image](https://drive.google.com/uc?export=view&id=1D05C1CV3LbY377gyr-LfCo9Kv636_kqv)
+![equation](https://latex.codecogs.com/svg.image?\sum\sum_{a}^{nb}=sadknfslknfsandf;landfslk)
 ## Previous Works
 1. paper1, this is paper1
 
