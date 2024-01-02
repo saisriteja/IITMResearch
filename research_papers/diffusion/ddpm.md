@@ -10,6 +10,8 @@ Nice, this looks okay
 I am not sure.................................................................................................................................................................................................................................this is great ebut lksajdflksanflakndsf;lnsdf;ln;laknfs;lkndf;lnasdf;ln;lanf;lkdsnf;lkndsf;lkandfs;lnaf;ldsknfnf;lan;lknf;lfhjnlakjsdfbhfsbalkjd.
 1. Question1: Bro why is this like this, I am not sure though.
 
+<!-- ![img1](https://drive.google.com/file/d/1D05C1CV3LbY377gyr-LfCo9Kv636_kqv/view?usp=drive_link) -->
+![image](https://drive.google.com/uc?export=view&id=1D05C1CV3LbY377gyr-LfCo9Kv636_kqv)
 ## Previous Works
 1. paper1, this is paper1
 
