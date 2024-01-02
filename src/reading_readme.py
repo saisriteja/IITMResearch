@@ -1,5 +1,6 @@
 
 import re
+import streamlit as st
 
 class ReadingReadMe:
     def __init__(self, path):
@@ -13,6 +14,10 @@ class ReadingReadMe:
     def read_readme(self):
         with open(self.path, 'r') as f:
             return f.read()
+
+
+    def get_markdown(self):
+        st.markdown(self.content)
 
     def information_extraction(self):
         # get all the ## titles

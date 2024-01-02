@@ -22,13 +22,16 @@ def diffusion(path = 'research_papers/diffusion'):
     file_info = ReadingReadMe(selected_file)
 
     file_info.run()
-    information = file_info.information
 
-    # show the dict in the streamlit
-    for key, value in file_info.information.items():
-        st.markdown(f"## {key}")
-        for point in value:
-            st.markdown(f"- {point}")
+    # # show the dict in the streamlit
+    # for key, value in file_info.information.items():
+    #     st.markdown(f"## {key}")
+    #     for point in value:
+    #         st.markdown(f"- {point}")
+
+    file_info.get_markdown()
+
+
 
 
 page_names_to_funcs = {
