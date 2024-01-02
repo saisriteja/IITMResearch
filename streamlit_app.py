@@ -1,8 +1,6 @@
 import streamlit as st
-
-
-from pages.pages_1 import page2
-from pages.pages_2 import page3
+import os
+from src.reading_readme import ReadingReadMe
 
 
 def main_page():
@@ -10,10 +8,32 @@ def main_page():
     st.sidebar.markdown("# Main page 🎈")
 
 
+
+def diffusion(path = 'research_papers/diffusion'):
+
+    # drop down menu
+    file_names = os.path.join(path, '*.md')
+    file_names = os.listdir(path)
+
+    selected_file = st.sidebar.selectbox("Select a file", file_names)
+
+    selected_file = os.path.join(path, selected_file)
+
+    file_info = ReadingReadMe(selected_file)
+
+    file_info.run()
+    information = file_info.information
+
+    # show the dict in the streamlit
+    for key, value in file_info.information.items():
+        st.markdown(f"## {key}")
+        for point in value:
+            st.markdown(f"- {point}")
+
+
 page_names_to_funcs = {
     "Main Page": main_page,
-    "Page 2": page2,
-    "Page 3": page3,
+    "Diffusion": diffusion,
 }
 selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
 page_names_to_funcs[selected_page]()

@@ -8,7 +8,6 @@ class ReadingReadMe:
     def run(self):
         self.content = self.read_readme()
         self.information = self.information_extraction()
-        print(self.information)
 
 
     def read_readme(self):
