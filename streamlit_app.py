@@ -2,13 +2,11 @@ import streamlit as st
 import os
 from src.reading_readme import ReadingReadMe
 
-
 def main_page():
     st.title("Welcome to my website!")
     st.write("This is a website where I will be posting my research papers and insights out of it.")
 
 def page_name(path = 'research_papers/diffusion'):
-
     # drop down menu
     file_names = os.path.join(path, '*.md')
     file_names = os.listdir(path)
@@ -18,12 +16,11 @@ def page_name(path = 'research_papers/diffusion'):
     file_info.run()
     file_info.get_markdown()
 
-
-
 page_names_to_funcs = {
     "Main Page": main_page,
-    "Diffusion": page_name('research_papers/diffusion'),
-    "DeepFakeResearch": page_name('research_papers/DeepFakeResearch'),
+    "Diffusion": page_name,
+    "DeepFakeResearch": page_name,
 }
+
 selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
-page_names_to_funcs[selected_page]()
+page_names_to_funcs[selected_page](f'research_papers/{selected_page}')
