@@ -2,11 +2,11 @@ import streamlit as st
 import os
 from src.reading_readme import ReadingReadMe
 
-def main_page():
+def main_page(path = None):
     st.title("Welcome to my website!")
     st.write("This is a website where I will be posting my research papers and insights out of it.")
 
-def page_name(path = 'research_papers/diffusion'):
+def page_name(path):
     # drop down menu
     file_names = os.path.join(path, '*.md')
     file_names = os.listdir(path)
