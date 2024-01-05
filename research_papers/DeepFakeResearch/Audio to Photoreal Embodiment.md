@@ -22,8 +22,7 @@
 ![images](https://drive.google.com/uc?export=view&id=1tjASN8Er-H_zYhQ0UTUflXyo0zrGkafQ)
 ![images](https://drive.google.com/uc?export=view&id=15Rw8HCRAbijMmEm8H74iE5x3qVfQL3wO)
 
-<img src="https://drive.google.com/uc?export=view&id1B5QQLRLHFv-5WbtIWoFFzw9y-7KycN_G" width="150" height="280">
-
+<img src="http://animal.discovery.com/mammals/cheetah/pictures/cheetah-picture.jpg" alt="Cheetah!" />
 
 ## Metrics
 > FD: Frechet Distance
