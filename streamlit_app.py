@@ -18,8 +18,7 @@ def page_name(path):
 
 page_names_to_funcs = {
     "Main Page": main_page,
-    "Diffusion": page_name,
-    "DeepFakeResearch": page_name,
+    "Research Papers": page_name
 }
 
 selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
