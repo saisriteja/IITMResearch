@@ -78,31 +78,12 @@ def tag_finder():
         st.table(paper_info_df)
 
 
-    # gaps_df = data[['Gaps in research ps', 'Gaps in methodology', 'Explicit Limits']]   
-    # st.table(gaps_df)
-  
-    # change_df = data[['Research PaperName', 'Changing Task of Interest', 'Change in eval strategy', 'change the proposed method']]
-    # st.table(change_df)
-
-
-    # paper_structure_df = data[['Research PaperName','Global Structure', 'Seq of figs', 'Abstract Structure', 'Intro Structure', 'Related work structure', 'Conclusion Structure', 'method and exp structure']]
-    # st.table(paper_structure_df)
-
-    # paper_info_df = data[['Research PaperName', 'Priority', 'Conference', 'Year', 'Lab', 'Github_Project', 'Abstract', 'Results', 'Future Works']]
-    # st.table(paper_info_df)
-
-
-
-
-    
-
+        
 page_names_to_funcs = {
     "Main Page": main_page,
     "Research Papers": page_name,
     "tags": tag_finder
 }
-
-
 
 from update_cache import update_cache
 update_cache()
