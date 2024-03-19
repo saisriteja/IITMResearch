@@ -6,8 +6,11 @@ from src.reading_readme import ReadingReadMe
 import pandas as pd
 
 def main_page(path = None):
-    st.title("Welcome to my website!")
+    st.title("Welcome to my Research Page!")
     st.write("This is a website where I will be posting my research papers and insights out of it.")
+    st.write("You will have 2 subsessions tags and papers.")
+    st.write("Papers will have all the relevant information of all the papers in them.")
+    st.write("Tags will have all the tags and the papers associated with them.")
 
 from src.research_info import get_all_info
 
