@@ -24,7 +24,6 @@ def update_cache():
         
 
     all_papers_json = list(info.keys())
-
     # diff between all_papers and all_papers_json
     all_papers = list(set(all_papers) - set(all_papers_json))
 
@@ -38,7 +37,6 @@ def update_cache():
         json.dump(info, f, indent=4)
 
     return
-
 
 if __name__ == '__main__':
     update_cache()

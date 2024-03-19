@@ -40,7 +40,7 @@ keys = [
     'Conference',
     'Year',
     'Lab',
-    'Github / Project',
+    'Github_Project',
     'Abstract',
     'Results',
     'Future Works',
